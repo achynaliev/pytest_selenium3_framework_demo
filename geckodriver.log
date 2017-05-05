@@ -162,3 +162,21 @@ See /usr/include/servers/bootstrap_defs.h for the error codes.
 2017-05-03 21:18:15.707 plugin-container[37726:4277675] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9f03, name = 'com.apple.CFPasteboardClient'
 See /usr/include/servers/bootstrap_defs.h for the error codes.
 1493871513178	Marionette	INFO	New connections will no longer be accepted
+1493948664336	geckodriver	INFO	Listening on 127.0.0.1:52439
+1493948665438	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+1493948667655	Marionette	INFO	Listening on port 52460
+1493948667770	Marionette	WARN	TLS certificate errors will be ignored for this session
+2017-05-04 18:44:28.208 plugin-container[39806:4516626] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9c3b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2017-05-04 18:44:28.209 plugin-container[39806:4516626] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9f03, name = 'com.apple.CFPasteboardClient'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1493948696776	Marionette	INFO	New connections will no longer be accepted
+1493948775441	geckodriver	INFO	Listening on 127.0.0.1:53524
+1493948775503	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+1493948777786	Marionette	INFO	Listening on port 53531
+1493948777849	Marionette	WARN	TLS certificate errors will be ignored for this session
+2017-05-04 18:46:18.272 plugin-container[39829:4518497] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9c3b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2017-05-04 18:46:18.273 plugin-container[39829:4518497] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9f03, name = 'com.apple.CFPasteboardClient'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1493948803113	Marionette	INFO	New connections will no longer be accepted

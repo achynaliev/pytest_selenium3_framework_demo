@@ -65,3 +65,25 @@ class LoginPage(BasePage):
 
     def enterSendToEmail(self, sendtoemail):
         self.sendKeys(sendtoemail, self._send_to)
+
+    def login_flow(self, email, password):
+        self.ClickSignInHome()
+        time.sleep(1)
+        result1 = self.isEmailElementIsPresent()
+        if result1 == True:
+            self.InputEmailSignIn(email)
+            self.clickNextAfterEmail()
+            time.sleep(1)
+            self.InputPasswordSignIn(password)
+            time.sleep(1)
+            self.clickFinalSignIn()
+            self.util.sleep(2, "wait before TearDown")
+        else:
+            self.InputEmailSignIn1(email)
+            self.clickNextAfterEmail1()
+            time.sleep(1)
+            self.SelectElementPasswordInput()
+            time.sleep(1)
+            self.InputPasswordSignIn1(password)
+            self.clickNextAfterPassword()
+            self.util.sleep(2, "wait before TearDown")
