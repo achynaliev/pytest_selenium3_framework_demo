@@ -23,8 +23,8 @@ class LoginPage(BasePage):
     _password_input_sign_in_1 = "//div[@id='password']//div/input" # Xpath
     _final_sing_in = "signIn" #ID
     _next_after_password_input = "passwordNext"
-    _compose_main = "COMPOSE" #LinkText
-    _send_to = ":84" #ID
+    _compose_main = "//div[@class='aic']/div/div" #xpath
+    _send_to = ":89" #ID
 
     def ClickSignInHome(self):
         self.elementClick(self._sign_in_button_home, locatorType="css")
@@ -60,12 +60,6 @@ class LoginPage(BasePage):
     def clickNextAfterPassword(self):
         self.elementClick(self._next_after_password_input)
 
-    def clickComposeMainButton(self):
-        self.elementClick(self._compose_main, locatorType="link") #Link text
-
-    def enterSendToEmail(self, sendtoemail):
-        self.sendKeys(sendtoemail, self._send_to)
-
     def login_flow(self, email, password):
         self.ClickSignInHome()
         time.sleep(1)
@@ -77,7 +71,7 @@ class LoginPage(BasePage):
             self.InputPasswordSignIn(password)
             time.sleep(1)
             self.clickFinalSignIn()
-            self.util.sleep(2, "wait before TearDown")
+            self.util.sleep(2, "wait before next test run")
         else:
             self.InputEmailSignIn1(email)
             self.clickNextAfterEmail1()
@@ -86,4 +80,4 @@ class LoginPage(BasePage):
             time.sleep(1)
             self.InputPasswordSignIn1(password)
             self.clickNextAfterPassword()
-            self.util.sleep(2, "wait before TearDown")
+            self.util.sleep(2, 'wait before next test run')
