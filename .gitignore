@@ -1,0 +1,6 @@
+*.cache
+*.DS_Store
+*.idea
+*geckodriver.log
+*automation.log
+*.idea/workspace.xml
